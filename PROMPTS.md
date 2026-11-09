@@ -1,7 +1,5 @@
 # PROMPTS.md
 
-## 2026-11-08
-
 ### Task
 Started the LedgerLine project from scratch because the source code link provided in the problem statement returned a GitHub 404 error.
 
@@ -68,3 +66,27 @@ Added TestController.
 
 Result:
 Verified backend using localhost:8080/test.
+
+## Phase 2
+
+Objective
+
+Design database schema.
+
+Tasks
+
+Create
+
+User Entity
+
+Transaction Entity
+
+Category Entity
+
+Budget Entity
+
+Goal Entity
+
+Status
+
+Completed
