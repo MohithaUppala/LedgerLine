@@ -38,3 +38,31 @@ Created JPA Entity classes
 - Goal
 
 Configured Hibernate for automatic table creation.
+
+## Phase 1 - Authentication ✅
+
+### Features Implemented
+
+- User Registration API
+- User Login API
+- User Logout API
+
+### API Endpoints
+
+| Method | Endpoint | Description |
+|---------|-----------|-------------|
+| POST | /api/users/register | Register a new user |
+| POST | /api/users/login | Authenticate user |
+| POST | /api/users/logout | Logout user |
+
+### Technologies Used
+
+- Spring Boot
+- Spring Web
+- Spring Data JPA
+- PostgreSQL
+- Maven
+
+### Current Status
+
+✅ Phase 1 Completed
