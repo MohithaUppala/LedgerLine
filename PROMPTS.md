@@ -90,3 +90,26 @@ Goal Entity
 Status
 
 Completed
+
+## LedgerLine Progress
+
+Completed Phase 1 - Authentication
+
+✔ Register API
+✔ Login API
+✔ Logout API
+
+Current Tech Stack
+- Spring Boot
+- PostgreSQL
+- Spring Data JPA
+- Maven
+- Postman
+
+Database
+- users table created
+- Register stores user details
+- Login validates email and password
+- Logout endpoint implemented
+
+
