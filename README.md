@@ -24,3 +24,17 @@ Completed:
 
 Status:
 ✔ Backend running successfully on localhost:8080
+
+# Phase 2 - Database Design
+
+## Completed
+
+Created JPA Entity classes
+
+- User
+- Transaction
+- Category
+- Budget
+- Goal
+
+Configured Hibernate for automatic table creation.
