@@ -21,3 +21,50 @@ The AI assumed the starter project was available. However, the starter repositor
 ### What I did instead
 I created a new repository locally and began building the project from scratch while documenting every development step and maintaining commit history.
 
+# Prompt History
+
+## Prompt 1
+
+Prompt:
+How do I connect Spring Boot with PostgreSQL?
+
+AI Response:
+Configured datasource properties in application.properties.
+
+Changes Made:
+Updated application.properties with PostgreSQL credentials.
+
+Result:
+Database connected successfully.
+
+---
+
+## Prompt 2
+
+Prompt:
+How do I disable Spring Security login page?
+
+AI Response:
+Created SecurityConfig class.
+
+Changes Made:
+Disabled form login and permitted all requests.
+
+Result:
+Application accessible without login.
+
+---
+
+## Prompt 3
+
+Prompt:
+How do I test whether Spring Boot is working?
+
+AI Response:
+Created a TestController with /test endpoint.
+
+Changes Made:
+Added TestController.
+
+Result:
+Verified backend using localhost:8080/test.
