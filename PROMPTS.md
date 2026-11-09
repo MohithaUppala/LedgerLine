@@ -112,4 +112,19 @@ Database
 - Login validates email and password
 - Logout endpoint implemented
 
+# AI Prompts Used
 
+## Prompt 1
+Create a Spring Boot REST API for Budget Management.
+
+## Prompt 2
+Generate a React component that fetches budget data using Axios.
+
+## Prompt 3
+Help resolve CORS issues between React and Spring Boot.
+
+## Prompt 4
+Fix Vite native binding error on Windows.
+
+## Prompt 5
+Create a simple UI to display budget category and amount.
