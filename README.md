@@ -66,3 +66,40 @@ Configured Hibernate for automatic table creation.
 ### Current Status
 
 ✅ Phase 1 Completed
+
+
+# LedgerLine
+
+A personal finance and budget management application built using:
+
+## Tech Stack
+- Frontend: React + Vite
+- Backend: Spring Boot
+- Database: MySQL
+
+## Features
+- View Budgets
+- Add Budget
+- Update Budget
+- Delete Budget
+- REST API Integration
+
+## Project Structure
+LedgerLine/
+├── frontend/
+├── backend/
+
+## Run Project
+
+Backend
+./mvnw spring-boot:run
+
+Frontend
+npm install
+npm run dev
+
+Backend:
+http://localhost:8080
+
+Frontend:
+http://localhost:5173
