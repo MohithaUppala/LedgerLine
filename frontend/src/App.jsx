@@ -1,31 +1,34 @@
-import { useEffect, useState } from "react";
-import API from "./services/api";
+import { useState } from "react";
+import Dashboard from "./pages/Dashboard";
+import "./App.css";
 
 function App() {
-  const [budgets, setBudgets] = useState([]);
-
-  useEffect(() => {
-    API.get("/budgets")
-      .then((response) => {
-        setBudgets(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+  const [transactions, setTransactions] = useState([
+    {
+      id: 1,
+      title: "Salary",
+      type: "Income",
+      amount: 30000,
+    },
+    {
+      id: 2,
+      title: "Groceries",
+      type: "Expense",
+      amount: 2500,
+    },
+    {
+      id: 3,
+      title: "Electricity Bill",
+      type: "Expense",
+      amount: 1500,
+    },
+  ]);
 
   return (
-    <div style={{ padding: "30px" }}>
-      <h1>LedgerLine</h1>
-
-      {budgets.map((budget) => (
-        <div key={budget.id}>
-          <h3>{budget.category}</h3>
-          <p>₹ {budget.amount}</p>
-          <hr />
-        </div>
-      ))}
-    </div>
+    <Dashboard
+      transactions={transactions}
+      setTransactions={setTransactions}
+    />
   );
 }
 
