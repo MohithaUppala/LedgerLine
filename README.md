@@ -147,4 +147,3 @@ LedgerLine is a Full Stack Expense Tracker application built using Spring Boot, 
 - Axios
 - CSS
 
-## Project Structure
