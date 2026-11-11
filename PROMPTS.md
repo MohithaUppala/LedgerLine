@@ -128,3 +128,33 @@ Fix Vite native binding error on Windows.
 
 ## Prompt 5
 Create a simple UI to display budget category and amount.
+
+# Prompt History
+
+## Prompt 9 – Complete LedgerLine Frontend Dashboard
+
+### Objective
+Develop the frontend dashboard for the LedgerLine Expense Tracker using React and Vite.
+
+### Features Implemented
+- Responsive Dashboard UI
+- Navbar component
+- Balance Card
+- Income Card
+- Expense Card
+- Budget Card
+- Transaction Form
+- Transaction List
+- Dashboard page layout
+- API service integration
+- Responsive design using CSS media queries
+
+### Technologies Used
+- React
+- Vite
+- Axios
+- CSS3
+- React Hooks
+
+### Outcome
+Successfully completed the frontend dashboard with reusable components and integrated backend APIs for displaying financial information.
