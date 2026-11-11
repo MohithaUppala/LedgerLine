@@ -103,3 +103,48 @@ http://localhost:8080
 
 Frontend:
 http://localhost:5173
+
+
+# LedgerLine
+
+LedgerLine is a Full Stack Expense Tracker application built using Spring Boot, PostgreSQL, React, and Vite.
+
+## Features
+
+### Authentication
+- User Registration
+- Login
+- JWT Authentication
+
+### Dashboard
+- Total Balance
+- Total Income
+- Total Expenses
+- Budget Overview
+
+### Transactions
+- Add Transaction
+- View Transactions
+- Categorize Transactions
+
+### Budget Management
+- Create Budget
+- View Budget
+- Budget Tracking
+
+## Tech Stack
+
+### Backend
+- Spring Boot
+- Java
+- PostgreSQL
+- Spring Security
+- JWT
+
+### Frontend
+- React
+- Vite
+- Axios
+- CSS
+
+## Project Structure
