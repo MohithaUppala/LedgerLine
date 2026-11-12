@@ -1,5 +1,10 @@
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+
 import Dashboard from "./pages/Dashboard";
+import Reports from "./pages/Reports";
+import Analytics from "./pages/Analytics";
+
 import "./App.css";
 
 function App() {
@@ -25,10 +30,27 @@ function App() {
   ]);
 
   return (
-    <Dashboard
-      transactions={transactions}
-      setTransactions={setTransactions}
-    />
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Dashboard
+            transactions={transactions}
+            setTransactions={setTransactions}
+          />
+        }
+      />
+
+      <Route
+        path="/reports"
+        element={<Reports transactions={transactions} />}
+      />
+
+      <Route
+        path="/analytics"
+        element={<Analytics transactions={transactions} />}
+      />
+    </Routes>
   );
 }
 
