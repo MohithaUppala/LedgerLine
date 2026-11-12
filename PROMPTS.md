@@ -158,3 +158,66 @@ Develop the frontend dashboard for the LedgerLine Expense Tracker using React an
 
 ### Outcome
 Successfully completed the frontend dashboard with reusable components and integrated backend APIs for displaying financial information.
+
+
+# LedgerLine Prompt
+
+## Project Name
+
+LedgerLine – Personal Finance Tracker
+
+## Objective
+
+Develop a responsive finance tracking web application that enables users to manage their income and expenses, monitor financial status, and analyze spending through reports and visualizations.
+
+## Features Completed
+
+- User Authentication
+- Dashboard
+- Add Transactions
+- Delete Transactions
+- Transaction History
+- Reports Module
+- Analytics Dashboard
+- Responsive Layout
+
+## Technologies Used
+
+- React
+- Vite
+- JavaScript
+- CSS
+- React Router DOM
+- Recharts
+
+## Current Project Structure
+
+```
+frontend/
+│
+├── components/
+│   ├── Navbar
+│   ├── ReportCard
+│   ├── ReportFilter
+│   ├── ReportTable
+│   └── charts/
+│
+├── pages/
+│   ├── Dashboard
+│   ├── Reports
+│   ├── Analytics
+│
+├── App.jsx
+└── main.jsx
+```
+
+## Remaining Tasks
+
+- Export Reports (PDF & Excel)
+- UI Enhancements
+- Testing & Bug Fixes
+- Deployment
+
+## Goal
+
+Create a lightweight, responsive, and user-friendly finance management application using React.
