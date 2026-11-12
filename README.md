@@ -147,3 +147,101 @@ LedgerLine is a Full Stack Expense Tracker application built using Spring Boot, 
 - Axios
 - CSS
 
+# 💰 LedgerLine
+
+LedgerLine is a modern personal finance tracker built using React and Vite. It helps users manage income and expenses, monitor balances, generate reports, and visualize financial data through interactive charts.
+
+## 🚀 Features
+
+- User Authentication (Login/Register)
+- Dashboard Overview
+- Add Income & Expense Transactions
+- Transaction History
+- Delete Transactions
+- Reports Module
+- Analytics Dashboard
+- Responsive UI
+
+## 🛠 Tech Stack
+
+- React.js
+- Vite
+- React Router DOM
+- Recharts
+- CSS3
+- JavaScript (ES6)
+
+## 📂 Project Structure
+
+```
+frontend/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── assets/
+│   └── App.jsx
+│
+├── public/
+└── package.json
+```
+
+## 📊 Modules
+
+### Dashboard
+- Displays Income
+- Displays Expense
+- Shows Current Balance
+
+### Transactions
+- Add Transactions
+- Delete Transactions
+- Transaction History
+
+### Reports
+- Income Report
+- Expense Report
+- Net Balance
+- Transaction Table
+
+### Analytics
+- Bar Chart
+- Pie Chart
+- Line Chart
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/MohithaUppala/LedgerLine.git
+```
+
+```bash
+cd LedgerLine/frontend
+```
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Future Improvements
+
+- Export PDF Reports
+- Export Excel Reports
+- Monthly Budget Planning
+- Dark Mode
+- Cloud Database
+
+## Author
+
+Mohitha Uppala
