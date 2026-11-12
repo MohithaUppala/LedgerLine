@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  const handleLogout = () => {
+    localStorage.removeItem("isLoggedIn");
+    window.location.replace("/login");
+  };
+
   return (
     <nav
       style={{
@@ -14,7 +19,13 @@ function Navbar() {
     >
       <h2>LedgerLine</h2>
 
-      <div style={{ display: "flex", gap: "20px" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "20px",
+        }}
+      >
         <Link
           to="/"
           style={{ color: "white", textDecoration: "none" }}
@@ -35,6 +46,21 @@ function Navbar() {
         >
           Analytics
         </Link>
+
+        <button
+          onClick={handleLogout}
+          style={{
+            background: "#EF4444",
+            color: "white",
+            border: "none",
+            padding: "8px 15px",
+            borderRadius: "6px",
+            cursor: "pointer",
+            fontWeight: "bold",
+          }}
+        >
+          Logout
+        </button>
       </div>
     </nav>
   );

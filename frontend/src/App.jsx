@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Dashboard from "./pages/Dashboard";
 import Reports from "./pages/Reports";
 import Analytics from "./pages/Analytics";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 import "./App.css";
 
@@ -29,27 +31,78 @@ function App() {
     },
   ]);
 
+  const [isLoggedIn, setIsLoggedIn] = useState(
+    localStorage.getItem("isLoggedIn") === "true"
+  );
+
   return (
     <Routes>
       <Route
+        path="/login"
+        element={
+          isLoggedIn ? (
+            <Navigate to="/" replace />
+          ) : (
+            <Login setIsLoggedIn={setIsLoggedIn} />
+          )
+        }
+      />
+
+      <Route
+        path="/register"
+        element={
+          isLoggedIn ? (
+            <Navigate to="/" replace />
+          ) : (
+            <Register />
+          )
+        }
+      />
+
+      <Route
         path="/"
         element={
-          <Dashboard
-            transactions={transactions}
-            setTransactions={setTransactions}
-          />
+          isLoggedIn ? (
+            <Dashboard
+              transactions={transactions}
+              setTransactions={setTransactions}
+              setIsLoggedIn={setIsLoggedIn}
+            />
+          ) : (
+            <Navigate to="/login" replace />
+          )
         }
       />
 
       <Route
         path="/reports"
-        element={<Reports transactions={transactions} />}
+        element={
+          isLoggedIn ? (
+            <Reports
+              transactions={transactions}
+              setIsLoggedIn={setIsLoggedIn}
+            />
+          ) : (
+            <Navigate to="/login" replace />
+          )
+        }
       />
 
       <Route
         path="/analytics"
-        element={<Analytics transactions={transactions} />}
+        element={
+          isLoggedIn ? (
+            <Analytics
+              transactions={transactions}
+              setIsLoggedIn={setIsLoggedIn}
+            />
+          ) : (
+            <Navigate to="/login" replace />
+          )
+        }
       />
+
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
